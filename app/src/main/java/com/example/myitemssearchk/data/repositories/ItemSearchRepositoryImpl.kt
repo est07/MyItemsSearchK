@@ -2,7 +2,7 @@ package com.example.myitemssearchk.data.repositories
 
 import com.example.myitemssearchk.data.mapper.ItemSearchMapperService
 import com.example.myitemssearchk.data.service.api.MercadoLibreApi
-import com.example.myitemssearchk.domain.ItemSearch
+import com.example.myitemssearchk.domain.model.ItemSearch
 import com.example.myitemssearchk.domain.repositories.ItemSearchRepository
 import io.reactivex.Single
 

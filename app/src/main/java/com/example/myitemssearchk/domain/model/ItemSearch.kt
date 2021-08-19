@@ -1,4 +1,4 @@
-package com.example.myitemssearchk.domain
+package com.example.myitemssearchk.domain.model
 
 data class ItemSearch(
     val id: String,
