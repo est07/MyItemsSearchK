@@ -9,12 +9,13 @@ android {
 
     defaultConfig {
         applicationId "com.example.myitemssearchk"
-        minSdkVersion 21
+        minSdkVersion 16
         targetSdkVersion 30
         versionCode 1
         versionName "1.0"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        multiDexEnabled true
     }
 
     buildTypes {
@@ -64,6 +65,9 @@ dependencies {
     implementation "org.koin:koin-androidx-scope:2.2.1"
     // Koin AndroidX ViewModel feature
     implementation "org.koin:koin-androidx-viewmodel:2.2.1"
+
+    //Fix DexFile Error
+    implementation("com.android.support:multidex:2.0.1")
 
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.3'

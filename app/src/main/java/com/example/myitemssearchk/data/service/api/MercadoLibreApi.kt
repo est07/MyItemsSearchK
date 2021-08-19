@@ -10,7 +10,7 @@ interface MercadoLibreApi {
 
     @GET("sites/{SITE_ID}/search")
     fun getItemSearch(
-        @Path("storeId") storeId: String? = "MCO",
+        @Path("SITE_ID") siteId: String? = "MCO",
         @Query("q") search: String,
     ): Single<ItemSearchResponse>
 }
