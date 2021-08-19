@@ -1,7 +1,7 @@
 package com.example.myitemssearchk.data.mapper
 
 import com.example.myitemssearchk.data.service.response.ItemResponse
-import com.example.myitemssearchk.domain.ItemSearch
+import com.example.myitemssearchk.domain.model.ItemSearch
 
 class ItemSearchMapperService : BaseMapperService<ItemResponse, ItemSearch> {
 
