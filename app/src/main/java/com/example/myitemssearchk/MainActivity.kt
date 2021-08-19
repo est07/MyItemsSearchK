@@ -1,8 +1,7 @@
-package com.example.myitemssearchk.presentation
+package com.example.myitemssearchk
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.example.myitemssearchk.R
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
