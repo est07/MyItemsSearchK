@@ -5,6 +5,7 @@ import com.example.myitemssearchk.presentation.di.mapperServiceModule
 import com.example.myitemssearchk.presentation.di.repositoriesModule
 import com.example.myitemssearchk.presentation.di.serviceModule
 import com.example.myitemssearchk.presentation.di.useCasesModule
+import com.example.myitemssearchk.presentation.di.viewModelModule
 import org.koin.android.ext.koin.androidContext
 import org.koin.core.context.loadKoinModules
 import org.koin.core.context.startKoin
@@ -21,7 +22,8 @@ class MyItemsSearchApplication : Application() {
                     serviceModule,
                     mapperServiceModule,
                     repositoriesModule,
-                    useCasesModule
+                    useCasesModule,
+                    viewModelModule
                 )
             )
         }
