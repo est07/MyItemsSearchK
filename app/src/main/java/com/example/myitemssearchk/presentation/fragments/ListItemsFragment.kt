@@ -3,7 +3,7 @@ package com.example.myitemssearchk.presentation.fragments
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.View
-import android.widget.Toast
+import androidx.navigation.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.myitemssearchk.R
 import com.example.myitemssearchk.databinding.FragmentListItemsBinding
@@ -22,8 +22,9 @@ class ListItemsFragment : Fragment(R.layout.fragment_list_items) {
     private val itemSearchDataViewModel: ItemSearchDataViewModel by sharedViewModel()
     private val itemSearchViewModel: ItemSearchViewModel by viewModel()
 
-    private val adapter = ListItemsAdapter(listOf()) {
-        Toast.makeText(this.context, "show data", Toast.LENGTH_SHORT).show()
+    private val adapter = ListItemsAdapter(listOf()) { itemSearch ->
+        itemSearchDataViewModel.itemData = itemSearch
+        gotoItemDetailFragment(R.id.action_listItemsFragment_to_itemDetailFragment)
     }
 
     private lateinit var binding: FragmentListItemsBinding
@@ -98,7 +99,7 @@ class ListItemsFragment : Fragment(R.layout.fragment_list_items) {
         }
     }
 
-    private fun showErrorFields(){
+    private fun showErrorFields() {
         binding.apply {
             txvNoDataFound.visible()
             ivIconSearchFailed.visible()
@@ -106,14 +107,14 @@ class ListItemsFragment : Fragment(R.layout.fragment_list_items) {
         }
     }
 
-    private fun showNetworkError(){
+    private fun showNetworkError() {
         isNetworkError = true
         hideProgress()
         showErrorFields()
         showNetworkErrorFiled()
     }
 
-    private fun showSearchError(){
+    private fun showSearchError() {
         hideProgress()
         showErrorFields()
         showNoFoundItem()
@@ -149,11 +150,15 @@ class ListItemsFragment : Fragment(R.layout.fragment_list_items) {
         }
     }
 
-    private fun initSearch(){
+    private fun initSearch() {
         itemSearchViewModel.getItemSearch(itemSearchDataViewModel.textSearched)
     }
 
     private fun backPressed() {
         activity?.onBackPressed()
+    }
+
+    private fun gotoItemDetailFragment(navigationAction: Int) {
+        view?.findNavController()?.navigate(navigationAction)
     }
 }

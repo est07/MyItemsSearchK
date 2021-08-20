@@ -7,3 +7,25 @@ X
 Sapp/src/main/java/com/example/myitemssearchk/data/mapper/ItemSearchMapperService.kt,3/d/3dd002cd4e56bdad6b40b5cba79a45ff5783c4fd
 <
 build.gradle,f/0/f07866736216be0ee2aba49e392191aeae700a35
+w
+Gapp/src/main/java/com/example/myitemssearchk/domain/model/ItemSearch.kt,0/5/05a4320ef3bd68d7fe4c23fa54eb5c30be72aa7f
+ˆ
+Xapp/src/main/java/com/example/myitemssearchk/domain/repositories/ItemSearchRepository.kt,a/5/a5643f9effe1ae406d35bd41a058004eeea7b3bd
+…
+Uapp/src/main/java/com/example/myitemssearchk/presentation/MyItemsSearchApplication.kt,1/0/10149f1dcfc4d4ace8b9c172aa94a45a389a23c9
+t
+Dapp/src/main/java/com/example/myitemssearchk/commos/BaseViewModel.kt,0/a/0afbf86cecae7fae4f2ef704e339966da6cb7fb9
+v
+Fapp/src/main/java/com/example/myitemssearchk/domain/uc/ItemSearchUC.kt,3/d/3d85e1dce3138e26f875e5c4b7c1ed1dc052674a
+‹
+[app/src/main/java/com/example/myitemssearchk/presentation/viewModels/ItemSearchViewModel.kt,e/3/e3c78852e21af46cb79202e669425dd1977c82b4
+Š
+Zapp/src/main/java/com/example/myitemssearchk/data/repositories/ItemSearchRepositoryImpl.kt,5/9/59e882691cdf6a3f11d82aff5bc170f3fb3d2634
+€
+Papp/src/main/java/com/example/myitemssearchk/data/service/api/MercadoLibreApi.kt,b/4/b4b90b048b790b799648aa312161574718869fbd
+
+Oapp/src/main/java/com/example/myitemssearchk/presentation/di/ViewModelModule.kt,3/c/3cdc01c33b0ac3bf4a92f39ac08d50ffd6982d3e
+ƒ
+Sapp/src/main/java/com/example/myitemssearchk/presentation/states/ItemSearchState.kt,0/8/08808629e8199a666aa00fe9741c654e25082928
+l
+<app/src/main/java/com/example/myitemssearchk/MainActivity.kt,5/0/5088fd1cf95502d36ea2f443c4242143701a4049
