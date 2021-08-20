@@ -7,4 +7,11 @@
     <string name="search_fragment.search_button_text">Buscar</string>
     <string name="search_fragment.search_field_empty">No has ingresado un texto a la busqueda</string>
 
+    <string name="list_items_fragment.list_title">Lista de productos</string>
+
+    <string name="list_items_fragment.no_data_found">El producto no fue encontrado</string>
+    <string name="list_items_fragment.network_error">Error de conexión</string>
+    <string name="list_items_fragment.btn_retry">Volver a intentar</string>
+    <string name="list_items_fragment.btn_return_to_search">Regresar a la busqueda</string>
+
 </resources>

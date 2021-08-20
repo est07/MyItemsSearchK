@@ -1,16 +1,14 @@
 package com.example.myitemssearchk.presentation.adapter.ViewHolder
 
 import android.graphics.Color
-import android.system.Os.bind
 import android.view.View
 import androidx.recyclerview.widget.RecyclerView
-import com.example.myitemssearchk.databinding.ActivityMainBinding.bind
 import com.example.myitemssearchk.databinding.SearchListItemBinding
 import com.example.myitemssearchk.domain.model.ItemSearch
-import com.example.myitemssearchk.presentation.Constants.Companion.BASE_IMAGE_URL
+import com.example.myitemssearchk.presentation.Constants.Companion.BASE_HTTPS_URL
+import com.example.myitemssearchk.presentation.Constants.Companion.BASE_HTTP_URL
 import com.example.myitemssearchk.presentation.extension.getImageByUrl
 import com.example.myitemssearchk.presentation.listener.ListItemSearchListener
-
 
 class ListItemsViewHolder(
     view: View,
@@ -21,7 +19,7 @@ class ListItemsViewHolder(
     fun bind(item: ItemSearch) = with(binding) {
         txvItemSearchTitle.text = item.title
         txvItemPrice.text = item.price.toString()
-        imvItemSearch.getImageByUrl("$BASE_IMAGE_URL${item.itemImage}")
+        imvItemSearch.getImageByUrl(item.itemImage.replace(BASE_HTTP_URL, BASE_HTTPS_URL))
         imvItemSearch.setBackgroundColor(Color.TRANSPARENT)
         root.setOnClickListener { listener(item) }
     }

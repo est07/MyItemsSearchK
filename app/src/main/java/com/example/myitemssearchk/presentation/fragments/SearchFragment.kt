@@ -7,8 +7,12 @@ import androidx.fragment.app.Fragment
 import androidx.navigation.findNavController
 import com.example.myitemssearchk.R
 import com.example.myitemssearchk.databinding.FragmentSearchBinding
+import com.example.myitemssearchk.presentation.viewModels.ItemSearchDataViewModel
+import org.koin.androidx.viewmodel.ext.android.sharedViewModel
 
 class SearchFragment : Fragment(R.layout.fragment_search) {
+
+    private val itemSearchDataViewModel: ItemSearchDataViewModel by sharedViewModel()
 
     private lateinit var binding: FragmentSearchBinding
 
@@ -36,6 +40,7 @@ class SearchFragment : Fragment(R.layout.fragment_search) {
     private fun validateSearchField() {
         binding.apply {
             if (!edtSearchField.text?.trim().isNullOrEmpty()) {
+                itemSearchDataViewModel.textSearched = edtSearchField.text.toString().trim()
                 gotoListItemsView(R.id.action_searchFragment_to_listItemsFragment)
             } else {
                 edtSearchField.error = getString(R.string.search_fragment_search_field_empty)
