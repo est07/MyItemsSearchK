@@ -1,14 +1,66 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".presentation.fragments.SearchFragment">
+    android:layout_height="match_parent">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txvSearchTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/search_fragment.search_title"
+        android:textAlignment="center"
+        android:textSize="@dimen/size_24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivIconSearch"
+        app:layout_constraintVertical_bias="0.1" />
 
-</FrameLayout>
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/edtSearchField"
+        android:background="@android:drawable/editbox_background_normal"
+        android:layout_width="@dimen/size_0dp"
+        android:layout_height="@dimen/size_45dp"
+        android:layout_marginLeft="@dimen/size_16dp"
+        android:layout_marginStart="@dimen/size_16dp"
+        android:layout_marginRight="@dimen/size_16dp"
+        android:layout_marginEnd="@dimen/size_16dp"
+        android:layout_marginTop="@dimen/size_20dp"
+        android:hint="@string/search_fragment.search_hint"
+        android:imeOptions="actionSearch"
+        android:inputType="text"
+        android:textSize="@dimen/size_24sp"
+        android:textColor="@color/black700"
+        android:textCursorDrawable="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txvSearchTitle"
+        app:layout_constraintVertical_bias="0.1" />
+
+    <ImageView
+        android:id="@+id/ivIconSearch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_search_120"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/txvSearchTitle"
+        app:layout_constraintEnd_toEndOf="@+id/txvSearchTitle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.1" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:text="@string/search_fragment.search_button_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size_10dp"
+        android:id="@+id/btnSearch"
+        android:textColor="@color/black700"
+        app:layout_constraintStart_toStartOf="@+id/edtSearchField"
+        app:layout_constraintEnd_toEndOf="@+id/edtSearchField"
+        app:layout_constraintTop_toBottomOf="@+id/edtSearchField" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
