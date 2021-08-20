@@ -25,9 +25,7 @@
         android:layout_width="@dimen/size_0dp"
         android:layout_height="@dimen/size_45dp"
         android:layout_marginLeft="@dimen/size_16dp"
-        android:layout_marginStart="@dimen/size_16dp"
         android:layout_marginRight="@dimen/size_16dp"
-        android:layout_marginEnd="@dimen/size_16dp"
         android:layout_marginTop="@dimen/size_20dp"
         android:hint="@string/search_fragment.search_hint"
         android:imeOptions="actionSearch"
@@ -41,7 +39,7 @@
         app:layout_constraintTop_toBottomOf="@+id/txvSearchTitle"
         app:layout_constraintVertical_bias="0.1" />
 
-    <ImageView
+    <androidx.appcompat.widget.AppCompatImageView
         android:id="@+id/ivIconSearch"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
