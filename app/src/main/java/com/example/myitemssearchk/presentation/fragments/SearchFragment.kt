@@ -20,22 +20,26 @@ class SearchFragment : Fragment(R.layout.fragment_search) {
     }
 
     private fun initListener() {
-        binding.edtSearchField.setOnEditorActionListener { _, actionId, _ ->
-            if (actionId == EditorInfo.IME_ACTION_SEARCH) {
+        binding.apply {
+            edtSearchField.setOnEditorActionListener { _, actionId, _ ->
+                if (actionId == EditorInfo.IME_ACTION_SEARCH) {
+                    validateSearchField()
+                }
+                false
+            }
+            btnSearch.setOnClickListener {
                 validateSearchField()
             }
-            false
-        }
-        binding.btnSearch.setOnClickListener {
-            validateSearchField()
         }
     }
 
     private fun validateSearchField() {
-        if (!binding.edtSearchField.text?.trim().isNullOrEmpty()) {
-            gotoListItemsView(R.id.action_searchFragment_to_listItemsFragment)
-        } else {
-            binding.edtSearchField.error = getString(R.string.search_fragment_search_field_empty)
+        binding.apply {
+            if (!edtSearchField.text?.trim().isNullOrEmpty()) {
+                gotoListItemsView(R.id.action_searchFragment_to_listItemsFragment)
+            } else {
+                edtSearchField.error = getString(R.string.search_fragment_search_field_empty)
+            }
         }
     }
 

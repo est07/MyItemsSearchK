@@ -5,6 +5,6 @@
     <string name="search_fragment.search_title">¿Qué producto estás buscando?</string>
     <string name="search_fragment.search_hint"> Buscar Producto</string>
     <string name="search_fragment.search_button_text">Buscar</string>
-
     <string name="search_fragment.search_field_empty">No has ingresado un texto a la busqueda</string>
+
 </resources>

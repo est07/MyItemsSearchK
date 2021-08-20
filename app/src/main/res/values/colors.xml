@@ -11,4 +11,7 @@
     <color name="black700">#333333</color>
     <color name="black500">#666666</color>
     <color name="black200">#B3B3B3</color>
+
+    <color name="blue600">#0053BA</color>
+    <color name="blue500">#0071ED</color>
 </resources>
