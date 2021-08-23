@@ -8,5 +8,5 @@ data class ItemSearch(
     val itemImage: String,
     val countryName: String,
     val cityName: String,
-    val neighborhoodName: String,
+    val neighborhoodName: String
 )

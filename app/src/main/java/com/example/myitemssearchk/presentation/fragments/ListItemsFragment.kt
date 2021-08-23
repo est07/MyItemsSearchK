@@ -63,7 +63,7 @@ class ListItemsFragment : Fragment(R.layout.fragment_list_items) {
     }
 
     private fun initObservers() {
-        itemSearchViewModel.mealSearchStateLiveData.observe(viewLifecycleOwner, { state ->
+        itemSearchViewModel.getItemSearchStateLiveData.observe(viewLifecycleOwner, { state ->
             when (state) {
                 is ItemSearchState.Loading -> {
                     showProgress()
