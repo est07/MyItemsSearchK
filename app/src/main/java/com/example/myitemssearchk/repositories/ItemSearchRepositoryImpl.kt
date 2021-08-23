@@ -1,4 +1,4 @@
-package com.example.myitemssearchk.data.repositories
+package com.example.myitemssearchk.repositories
 
 import com.example.myitemssearchk.data.mapper.ItemSearchMapperService
 import com.example.myitemssearchk.data.service.api.MercadoLibreApi
@@ -8,7 +8,7 @@ import io.reactivex.Single
 
 class ItemSearchRepositoryImpl(
     private val api: MercadoLibreApi,
-    private val mapper: ItemSearchMapperService,
+    private val mapper: ItemSearchMapperService
 ) : ItemSearchRepository {
 
     override fun getItemSearch(search: String): Single<List<ItemSearch>> {
