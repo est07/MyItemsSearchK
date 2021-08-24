@@ -40,12 +40,12 @@ En el package de presentation se encuentran todos los componentes que son utiliz
 
 A continuación se puede observar los Screenschots de cada una de las ventanas del app.
 
-![Alt text](/Images/Screenshot_1629470234.png)
-![Alt text](/Images/Screenshot_1629763000.png)
-![Alt text](/Images/Screenshot_1629763011.png)
-![Alt text](/Images/Screenshot_1629762984.png)
-![Alt text](/Images/Screenshot_1629493673.png)
-![Alt text](/Images/Screenshot_1629493662.png)
+![Alt text](/Images/Screenshot_1629470234.png){: width=200px}
+![Alt text](/Images/Screenshot_1629763000.png){: width=200px}
+![Alt text](/Images/Screenshot_1629763011.png){: width=200px}
+![Alt text](/Images/Screenshot_1629762984.png){: width=200px}
+![Alt text](/Images/Screenshot_1629493673.png){: width=200px}
+![Alt text](/Images/Screenshot_1629493662.png){: width=200px}
 
 # Resources:
 
