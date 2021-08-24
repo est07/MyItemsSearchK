@@ -10,7 +10,7 @@
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.1" />
         <entry key="app/src/main/res/layout/conten_list_items_fragment.xml" value="0.1" />
         <entry key="app/src/main/res/layout/fragment_item_detail.xml" value="0.25" />
-        <entry key="app/src/main/res/layout/fragment_list_items.xml" value="0.2" />
+        <entry key="app/src/main/res/layout/fragment_list_items.xml" value="0.14" />
         <entry key="app/src/main/res/layout/fragment_search.xml" value="0.33" />
         <entry key="app/src/main/res/layout/layout_item_search.xml" value="0.1" />
         <entry key="app/src/main/res/layout/search_list_item.xml" value="0.33" />

@@ -11,5 +11,3 @@ x
 Happ/src/test/java/com/example/myitemssearchk/RxImmediateSchedulerRule.kt,d/6/d601fc8d2be0fa94f379240e7a3e9af4695f18d2
 h
 8app/src/test/java/com/example/myitemssearchk/BaseTest.kt,9/d/9d1822d3026e03f0f8868316c121d4f96260699e
-@
-app/build.gradle,f/4/f4a01d6a4fcb971362ec00a83903fd3902f52164
