@@ -1,6 +1,6 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Theme.MyItemsSearchK" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+    <style name="Theme.MyItemsSearchK" parent="Theme.MaterialComponents.Light.NoActionBar">
         <!-- Primary brand color. -->
         <item name="colorPrimary">@color/blue500</item>
         <item name="colorPrimaryVariant">@color/blue600</item>
