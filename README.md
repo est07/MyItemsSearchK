@@ -30,22 +30,27 @@ En el package de presentation se encuentran todos los componentes que son utiliz
 # En la imagen mostrada a continuación se puede observar el funcionamiento del app.
 
  Búsqueda simple
-![Alt text](/Images/search_navigation.gif)
+
+<img src="/Images/search_navigation.gif" width="225" height="450">
+
  Error en la búsqueda
-![Alt text](/Images/search_error.gif)
+
+<img src="/Images/search_error.gif" width="225" height="450">
+
  Error  de conexión
-![Alt text](/Images/search_failed.gif)
+
+<img src="/Images/search_failed.gif" width="225" height="450">
 
 # How it looks
 
 A continuación se puede observar los Screenschots de cada una de las ventanas del app.
 
-![Alt text](/Images/Screenshot_1629470234.png){: width=200px}
-![Alt text](/Images/Screenshot_1629763000.png){: width=200px}
-![Alt text](/Images/Screenshot_1629763011.png){: width=200px}
-![Alt text](/Images/Screenshot_1629762984.png){: width=200px}
-![Alt text](/Images/Screenshot_1629493673.png){: width=200px}
-![Alt text](/Images/Screenshot_1629493662.png){: width=200px}
+<img src="/Images/Screenshot_1629470234.png" width="225" height="450">
+<img src="/Images/Screenshot_1629763000.png" width="225" height="450">
+<img src="/Images/Screenshot_1629763011.png" width="225" height="450">
+<img src="/Images/Screenshot_1629762984.png" width="225" height="450">
+<img src="/Images/Screenshot_1629493673.png" width="225" height="450">
+<img src="/Images/Screenshot_1629493662.png" width="225" height="450">
 
 # Resources:
 
