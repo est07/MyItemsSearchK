@@ -1,11 +1,9 @@
-package com.example.myitemssearchk
+package com.example.myitemssearchk.presentation.activities
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.navigation.fragment.NavHostFragment
-import com.example.myitemssearchk.presentation.viewModels.ItemSearchDataViewModel
-import org.koin.androidx.viewmodel.ext.android.sharedViewModel
-import org.koin.androidx.viewmodel.ext.android.viewModel
+import com.example.myitemssearchk.R
 
 class MainActivity : AppCompatActivity(R.layout.activity_main) {
 

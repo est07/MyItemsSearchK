@@ -2,6 +2,7 @@ package com.example.myitemssearchk.repositories
 
 import com.example.myitemssearchk.BaseTest
 import com.example.myitemssearchk.data.mapper.ItemSearchMapperService
+import com.example.myitemssearchk.data.repositories.ItemSearchRepositoryImpl
 import com.example.myitemssearchk.data.service.api.MercadoLibreApi
 import com.example.myitemssearchk.data.service.response.City
 import com.example.myitemssearchk.data.service.response.Country
