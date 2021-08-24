@@ -16,7 +16,7 @@
         tools:replace="android:appComponentFactory"
         android:appComponentFactory="@string/app_name"
         android:name=".presentation.MyItemsSearchApplication">
-        <activity android:name=".MainActivity">
+        <activity android:name=".presentation.activities.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />

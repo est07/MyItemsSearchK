@@ -1,4 +1,4 @@
-package com.example.myitemssearchk.repositories
+package com.example.myitemssearchk.data.repositories
 
 import com.example.myitemssearchk.data.mapper.ItemSearchMapperService
 import com.example.myitemssearchk.data.service.api.MercadoLibreApi
