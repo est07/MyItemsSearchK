@@ -43,6 +43,7 @@ class ListItemsFragment : Fragment(R.layout.fragment_list_items) {
         binding.apply {
             rvItemSearchList.layoutManager = LinearLayoutManager(context)
             rvItemSearchList.adapter = adapter
+            txvItemSearched.text = itemSearchDataViewModel.textSearched
         }
         initSearch()
     }
@@ -70,6 +71,7 @@ class ListItemsFragment : Fragment(R.layout.fragment_list_items) {
                 }
                 is ItemSearchState.Success -> {
                     hideProgress()
+                    binding.txvItemSearched.visible()
                     validateSearch(state.item)
                 }
                 is ItemSearchState.Error -> {
@@ -89,6 +91,7 @@ class ListItemsFragment : Fragment(R.layout.fragment_list_items) {
             ivIconSearchFailed.gone()
             rvItemSearchList.gone()
             btnRetry.gone()
+            txvItemSearched.gone()
         }
     }
 
@@ -104,6 +107,7 @@ class ListItemsFragment : Fragment(R.layout.fragment_list_items) {
             txvNoDataFound.visible()
             ivIconSearchFailed.visible()
             rvItemSearchList.visible()
+            txvItemSearched.gone()
         }
     }
 

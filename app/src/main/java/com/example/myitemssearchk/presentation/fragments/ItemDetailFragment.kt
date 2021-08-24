@@ -38,7 +38,7 @@ class ItemDetailFragment : Fragment(R.layout.fragment_item_detail) {
                         )
                 )
                 txvItemTitle.text = title
-                txvItemPrize.text = getString(R.string.price_format, price.toDouble().toString())
+                txvItemPrize.text = getString(R.string.price_format, price.toString())
 
                 txvItemLocation.text = getString(
                     R.string.item_detail_fragment_detail_address_information,

@@ -18,7 +18,7 @@ class ListItemsViewHolder(
     private val binding = SearchListItemBinding.bind(view)
     fun bind(item: ItemSearch) = with(binding) {
         txvItemSearchTitle.text = item.title
-        txvItemPrice.text = "$ ${item.price.toDouble()}"
+        txvItemPrice.text = "$ ${item.price}"
         imvItemSearch.getImageByUrl(item.itemImage.replace(BASE_HTTP_URL, BASE_HTTPS_URL))
         imvItemSearch.setBackgroundColor(Color.TRANSPARENT)
         root.setOnClickListener { listener(item) }

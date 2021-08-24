@@ -21,6 +21,20 @@
         app:title="@string/list_items_fragment.list_title"
         tools:ignore="UnusedAttribute" />
 
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txvItemSearched"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textSize="@dimen/size_24sp"
+        android:textStyle="normal|bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="RtlCompat"
+        tools:text="item"
+        app:layout_constraintTop_toBottomOf="@+id/tbItemSearchList"
+        android:layout_marginTop="16dp" />
+
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rvItemSearchList"
         android:layout_width="match_parent"
@@ -29,8 +43,8 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tbItemSearchList"
-        tools:listitem="@layout/search_list_item"/>
+        app:layout_constraintTop_toBottomOf="@+id/txvItemSearched"
+        tools:listitem="@layout/search_list_item" />
 
     <androidx.core.widget.ContentLoadingProgressBar
         android:id="@+id/pbListItems"
