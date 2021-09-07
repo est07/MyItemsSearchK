@@ -14,7 +14,7 @@ class SearchFragment : Fragment(R.layout.fragment_search) {
 
     private val itemSearchDataViewModel: ItemSearchDataViewModel by sharedViewModel()
 
-    private lateinit var binding: FragmentSearchBinding
+    private var binding: FragmentSearchBinding? = null
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
@@ -24,7 +24,7 @@ class SearchFragment : Fragment(R.layout.fragment_search) {
     }
 
     private fun initListener() {
-        binding.apply {
+        binding?.apply {
             edtSearchField.setOnEditorActionListener { _, actionId, _ ->
                 if (actionId == EditorInfo.IME_ACTION_SEARCH) {
                     validateSearchField()
@@ -38,7 +38,7 @@ class SearchFragment : Fragment(R.layout.fragment_search) {
     }
 
     private fun validateSearchField() {
-        binding.apply {
+        binding?.apply {
             if (!edtSearchField.text?.trim().isNullOrEmpty()) {
                 itemSearchDataViewModel.textSearched = edtSearchField.text.toString().trim()
                 gotoListItemsView(R.id.action_searchFragment_to_listItemsFragment)
@@ -50,5 +50,10 @@ class SearchFragment : Fragment(R.layout.fragment_search) {
 
     private fun gotoListItemsView(navigationAction: Int) {
         view?.findNavController()?.navigate(navigationAction)
+    }
+
+    override fun onDestroy() {
+        binding = null
+        super.onDestroy()
     }
 }
