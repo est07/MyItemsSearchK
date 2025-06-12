@@ -15,8 +15,10 @@
         android:theme="@style/Theme.MyItemsSearchK"
         tools:replace="android:appComponentFactory"
         android:appComponentFactory="@string/app_name"
-        android:name=".presentation.MyItemsSearchApplication">
-        <activity android:name=".presentation.activities.MainActivity">
+        android:name=".presentation.MyItemsSearchApplication"
+        tools:targetApi="28">
+        <activity android:name=".presentation.activities.MainActivity"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
